@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Dining - Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #A52A2A;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #8B0000;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .menu-category {
+            margin-bottom: 2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form input,
+        form select,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #A52A2A;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Delight Dining</h1>
+        <p>Where Taste Meets the Myth</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#events">Events</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <div class="menu-item"><span>Bruschetta</span><span>Rs. 683</span></div>
+            <div class="menu-item"><span>Stuffed Mushrooms</span><span>Rs. 772</span></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-item"><span>Grilled Salmon</span><span>Rs. 1545</span></div>
+            <div class="menu-item"><span>Ribeye Steak</span><span>Rs. 2145</span></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item"><span>Chocolate Lava Cake</span><span>Rs.600</span></div>
+            <div class="menu-item"><span>Tiramisu</span><span>Rs.515</span></div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+                <option value="">Number of Guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+            </select>
+            <textarea placeholder="Special Requests"></textarea>
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Jazz Night:</strong> Every Friday at 8 PM</li>
+            <li><strong>Wine Tasting:</strong> 20th July, 6 PM - 9 PM</li>
+            <li><strong>Cooking Class:</strong> 1st August, 3 PM - 5 PM</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delight Dining. All rights reserved.</p>
+    </footer>
+</body>
+</html>
